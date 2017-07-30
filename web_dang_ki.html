@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dang Ki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{
+	    	font-family: sans-serif;
+	    }
+		.navbar{
+			background: #FA7720 !important;
+			border: 0px;
+			border-radius: 0px;
+			margin: 0px;
+			letter-spacing: 4px;
+		}
+		.navbar-nav li a ,.navbar-brand {
+			color: white !important;
+
+		}
+		.navbar-nav li {
+			padding: 5px;
+		}
+		.navbar-right{
+			color: white !important;
+		}
+		.navbar-nav li a:hover, .navbar-nav li.active a{
+			background: white !important;
+			color: #FA7720 !important ;
+		}
+
+		.footer{
+			background : #FA7720;
+		}
+		.col-md-4 a,.col-md-4 h3,.col-md-4 li{
+			color: #7A7777;
+		}
+
+		.btn-primary{
+			background:  #FA7720 !important;
+			border: 0px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="http://localhost:3000/">PhamTienShoe</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li ><a href="http://localhost:3000/">TRANG CHỦ</a></li>
+					<li><a href="http://localhost:3000/SanPham">SẢN PHẨM</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+				    <form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">SEARCH</button>
+					</form>
+					<li class="active"><a href="http://localhost:3000/DangKi">ĐĂNG KÍ</a></li>
+					<li><a href="http://localhost:3000/DangNhap">ĐĂNG NHẬP</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+	<!-- ---------------------------------------------------navbar------------------------------------------------- -->
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h1 style="color:  #FA7720">KHÁCH HÀNG THÂN THIẾT</h1>
+				<i>Đã đăng kí tài khoản?Đăng nhập và xem lại lịch sử và quyền lợi mua hàng</i>
+				<div class="jumbotron">
+					<form action="#" method="POST" role="form">
+						
+					
+						<div class="form-group">
+							<label for="">Email:</label>
+							<input type="Email" class="form-control" id="" placeholder="Email của bạn">
+							<label for="">Mật Khẩu:</label>
+							<input type="password" class="form-control" id="" placeholder="Mật khẩu của bạn">
+							<input type="checkbox" ><p style="font-size: 12px">Ghi nhớ đăng nhập</p>
+						</div>
+					
+                 		<button type="submit" class="btn btn-primary">ĐĂNG NHẬP</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+			    <h1 style="color:  #FA7720">ĐĂNG KÍ THÔNG TIN</h1>
+			    <i>Lữu trữ thông tin khác hành,nhận ưu đãi và hỗ trợ tốt nhất</i>
+				<div class="jumbotron">
+					<form action="" method="POST" role="form">
+						
+						<div class="form-group">
+							<label for="">ĐỊA CHỈ EMAIL:</label>
+							<input type="Email" class="form-control" id="" placeholder="Email của bạn">
+							<label for="">MẬT KHẨU:</label>
+							<input type="password" class="form-control" id="" placeholder="Mật khẩu">
+							<label for="">NHẬP LẠI MẬT KHẨU:</label>
+							<input type="password" class="form-control" id="" placeholder="Nhập lại mật khẩu"><br>
+							<p style="text-align: right;font-size: 12px;">Mật khẩu từ 6 đến 18 ký tự</p>
+                            
+                            <label for="">HỌ VÀ TÊN:</label>
+							<input type="text" class="form-control" id="" placeholder="Nhập họ và tên">
+							<label for="">SỐ ĐIỆN THOẠI:</label>
+							<input type="text" class="form-control" id="" placeholder="Số điện thoại"><br>
+							<p style="text-align: right;font-size: 12px">Ví dụ : 01255559172</p>
+							<label for="">ĐỊA CHỈ GIAO HÀNG:</label>
+							<input type="text" class="form-control" id="" placeholder="">
+							<hr style="color: black;">
+							<h3>THÔNG TIN GIAO NHẬN HÀNG</h3>
+							<textarea name="Thông tin giao nhận hàng" style="height: 130px;width: 439px;"></textarea>
+
+						</div>
+					
+						
+					
+						<button type="submit" class="btn btn-primary">ĐĂNG KÍ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 100%;height: 10px;background:#FA7720 "></div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="col-md-6 text-center" >
+					<h3>SUPORT</h3>
+					<hr class="hr">
+					<p><a href="#">Thông tin tài khoản</a></p>
+					<p><a href="#">Chính sách giao hàng</a></p>
+					<p><a href="#">Thông tin size giày</a></p>
+					<p><a href="#">Chính sách bảo hành</a></p>
+				</div>
+				<div class="col-md-6 text-center">
+					<h3>ABOUT</h3>
+					<hr class="hr">
+					<p><a href="#">PhamTienShoe</a></p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h3> Nhận tin tức từ Phamtienshoe</h3>
+				<hr class="hr">
+				<form action="" method="POST" class="form-inline" role="form">
+				
+					<div class="form-group">
+						<label class="sr-only" for="">label</label>
+						<input type="email" class="form-control" id="" placeholder="Email của bạn">
+					</div>
+				
+					
+				
+					<button type="submit" class="btn btn-primary">GỬI</button>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<h3>Địa điểm mua hàng trực tiếp</h3>
+				<hr class="hr">
+				<ul>
+					<li><h4>Cơ sở 1:</h4> 11/19 Nguyễn Bính,Nam Định</li>
+					<li><h4>Cơ sở 2:</h4> Thung lũng silicon</li>
+					<li><h4>Cơ sở 3 :</h4>64 Đại Cồ Việt,Đại học bách khoa hà nội</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid text-center footer">
+		<p style="font-size: 30px;color: white;">This website made by PhamTien</p>
+	</footer>
+</body>
+</html>
